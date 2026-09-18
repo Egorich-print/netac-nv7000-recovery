@@ -1,0 +1,13 @@
+[package]
+name = "transport"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nvme-core = { path = "../nvme-core" }
+thiserror = "2"
+rusb = { version = "0.9", optional = true }
+
+[features]
+default = []
+uasp = ["dep:rusb"]

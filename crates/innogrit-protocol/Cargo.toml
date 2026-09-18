@@ -1,0 +1,10 @@
+[package]
+name = "innogrit-protocol"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nvme-core = { path = "../nvme-core" }
+transport = { path = "../transport" }
+thiserror = "2"
+crc32fast = "1"

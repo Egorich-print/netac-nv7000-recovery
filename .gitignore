@@ -1,0 +1,14 @@
+target/
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+.env
+__pycache__/
+*.pyc
+
+# vendor firmware images — do not commit
+m2_0536/
+*.fw
+fwconfig*.bin

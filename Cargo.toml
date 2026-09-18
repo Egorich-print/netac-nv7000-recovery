@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "crates/netac-cli",
+    "crates/nvme-core",
+    "crates/innogrit-protocol",
+    "crates/transport",
+]
+resolver = "2"

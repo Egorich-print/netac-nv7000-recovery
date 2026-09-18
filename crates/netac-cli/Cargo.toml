@@ -1,0 +1,18 @@
+[package]
+name = "netac-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "netac-recover"
+path = "src/main.rs"
+
+[dependencies]
+innogrit-protocol = { path = "../innogrit-protocol" }
+nvme-core = { path = "../nvme-core" }
+transport = { path = "../transport" }
+clap = { version = "4", features = ["derive"] }
+
+[features]
+default = []
+uasp = ["transport/uasp"]
